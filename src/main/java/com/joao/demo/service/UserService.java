@@ -29,4 +29,8 @@ public class UserService {
     public UserEntity obterPorLogin(String username){
         return repository.findByUsername(username);
     }
+
+    public void deletar(Long id){
+        repository.deleteById(id);
+    }
 }
